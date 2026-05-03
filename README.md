@@ -1,4 +1,4 @@
-Amazon User Segmentation Problem Statement: 
+Overview:
 
 Businesses like Amazon need to understand customer behavior. This project segments users based on features like age and product rating to identify distinct customer groups.
 
