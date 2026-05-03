@@ -1,0 +1,54 @@
+AMAZON USER SEGMENTATION - CLUSTER SUMMARY
+
+Model Used:
+Agglomerative Clustering
+
+Number of Clusters:
+6
+
+--------------------------------------------------
+
+Cluster 1:
+Users with low ratings and moderate age group.
+These users may represent less satisfied customers or inactive buyers.
+
+--------------------------------------------------
+
+Cluster 2:
+Young and middle-age users with very high purchase ratings.
+This cluster represents highly satisfied and engaged customers.
+
+--------------------------------------------------
+
+Cluster 3:
+Users with average ratings and balanced age distribution.
+These customers show moderate engagement with the platform.
+
+--------------------------------------------------
+
+Cluster 4:
+Young users with medium ratings.
+This segment may represent occasional or seasonal shoppers.
+
+--------------------------------------------------
+
+Cluster 5:
+Older users with medium-to-high ratings.
+These customers may be loyal premium buyers with consistent purchasing behaviour.
+
+--------------------------------------------------
+
+Cluster 6:
+Middle-age users with average ratings.
+This group reflects regular users with stable purchasing patterns.
+
+--------------------------------------------------
+
+Business Insights:
+- High-rating clusters can be targeted for premium memberships and loyalty rewards.
+- Low-rating users require personalized offers and service improvement.
+- Customer segmentation helps in targeted marketing and recommendation systems.
+- Different user groups can help Amazon improve customer retention strategies.
+
+Conclusion:
+The clustering model successfully identified distinct customer groups based on age and purchase rating. These insights can help businesses understand customer behaviour and improve decision-making.
