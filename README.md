@@ -20,7 +20,7 @@ Objective:
 
 3. Finding Optimal Clusters
 
-* Elbow Method
+* Agglomerative Clustering
 
 4. Visualization
 
