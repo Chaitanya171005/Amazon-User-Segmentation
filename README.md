@@ -1,136 +1,92 @@
-# Amazon User Segmentation using Agglomerative Clustering
+Overview
 
-## 📌 Overview
+Understanding customer behavior is essential for e-commerce platforms like Amazon to improve customer satisfaction and business growth. This project focuses on segmenting Amazon users into different groups based on their Age, Annual Income, and Purchase Rating using machine learning clustering techniques.
+The project applies Agglomerative Clustering to identify meaningful customer segments and analyze purchasing behavior patterns.
 
-Businesses like Amazon need to understand customer behavior to improve user experience and marketing strategies. This project focuses on customer segmentation using machine learning techniques to identify distinct groups of Amazon users based on features such as **Age** and **Product Rating**.
+Objective
 
-The project applies **Agglomerative Clustering**, an unsupervised machine learning algorithm, to analyze customer behavior patterns and generate meaningful user segments.
+The primary objectives of this project are:
 
----
+*Segment Amazon users into different customer groups
+*Identify hidden behavioral patterns among users
+*Analyze customer purchasing trends
+*Improve targeted marketing strategies
+*Support personalized recommendation systems
 
-## 🎯 Objective
+Dataset
 
-The main objectives of this project are:
+Features used: Age, Income, Rating
 
-* Group Amazon users into different clusters
-* Identify hidden patterns in customer behavior
-* Analyze user preferences based on age and ratings
-* Help businesses improve targeted marketing strategies
-* Support personalized recommendation systems
+Methodology
 
----
+Data Preprocessing
+ 
+The dataset was preprocessed before applying clustering algorithms.
+Preprocessing Steps:
+Handling missing values
+Feature selection
+Data normalization using StandardScaler
 
-## ⚙️ Methodology
+Model Used
 
-### 1️⃣ Data Preprocessing
+Agglomerative Clustering
+ 
+Agglomerative Clustering is a hierarchical clustering algorithm that follows a bottom-up approach:
+Each customer initially represents an individual cluster
+Closest clusters are merged iteratively
+The process continues until meaningful customer groups are formed
+This approach helps identify natural relationships among users based on their income, age, and ratings.
 
-The dataset was preprocessed before training the clustering model.
+K-Means Clustering
 
-#### Steps Performed:
+K-Means Clustering is an unsupervised machine learning algorithm used to group similar data points into clusters.
 
-* Handling missing values
-* Selecting important features
-* Feature scaling using `StandardScaler`
+The algorithm works as follows:
 
----
+1. Select the number of clusters (K)
+2. Initialize cluster centroids randomly
+3. Assign each data point to the nearest centroid
+4. Update centroid positions based on cluster averages
+5. Repeat the process until clusters stabilize
 
-### 2️⃣ Model Used
+The model groups Amazon users based on similarities in age, income, and purchase ratings.
 
-This project uses:
 
-## 🔹 Agglomerative Clustering
+Finding Optimal Number of Clusters
 
-Agglomerative Clustering is a hierarchical clustering algorithm that follows a **bottom-up approach**:
+The Elbow Method was used to determine the optimal number of clusters for the K-Means model.
 
-* Each data point starts as an individual cluster
-* Closest clusters are merged step-by-step
-* The process continues until meaningful clusters are formed
+The method works by plotting:
 
-This algorithm helps identify natural grouping patterns within the dataset.
+* Number of clusters (K)
+* WCSS (Within-Cluster Sum of Squares)
 
----
+The optimal value of K is identified at the point where the graph forms an “elbow,” indicating minimal improvement after that point.
 
-### 3️⃣ Finding Optimal Clusters
+Visualization
 
-Agglomerative clustering was used to determine meaningful customer groups based on similarities between users.
+The visualization represents the customer segmentation results obtained using the K-Means Clustering algorithm. Each point in the graph corresponds to an Amazon user, where:
 
-The clustering process helped identify distinct customer segments for better analysis and interpretation.
+X-axis: User Age
+Y-axis: Product Rating given by the user
 
----
+Different Colors: Different customer clusters identified by the algorithm
 
-## 📊 Visualization
+Users with similar age groups and rating patterns are grouped together.
 
-The visualization represents the customer segmentation results obtained using the clustering algorithm.
+Some clusters represent young users who provide high ratings, indicating satisfied and engaged customers.
+Other clusters may represent users with average or low ratings, which can help identify areas for improving customer experience.
 
-Each point in the graph corresponds to an Amazon user, where:
+Businesses can use these insights for:
 
-* **X-axis:** User Age
-* **Y-axis:** Product Rating given by the user
-* **Different Colors:** Different customer clusters identified by the algorithm
+1.Personalized recommendations
 
-The clustering visualization helps in understanding how users are grouped based on similar behavior and preferences.
+2.Targeted marketing campaigns
 
----
+3.Customer retention strategies
 
-## 🔍 Insights from Visualization
+4.Product improvement analysis
 
-* Users with similar age groups and rating patterns are grouped together.
-* Some clusters represent **young users who provide high ratings**, indicating satisfied and engaged customers.
-* Other clusters represent users with **average or low ratings**, helping identify areas for improving customer experience.
-* The clustering results provide meaningful business insights for customer analysis.
+The scatter plot provides an intuitive understanding of customer behavior and demonstrates the practical application of unsupervised machine learning in e-commerce analytics.
 
----
 
-## 🚀 Business Applications
-
-The generated clusters can help businesses in:
-
-* Personalized recommendations
-* Targeted marketing campaigns
-* Customer retention strategies
-* Product improvement analysis
-* Customer behavior understanding
-
-The scatter plot provides an intuitive understanding of customer behavior and demonstrates the practical application of **unsupervised machine learning** in e-commerce analytics.
-
----
-
-## 🛠️ Technologies Used
-
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Scikit-Learn
-
----
-
-## 📁 Project Structure
-
-```text
-Amazon-User-Segmentation/
-│
-├── data/
-├── notebooks/
-├── src/
-├── images/
-├── outputs/
-├── README.md
-├── requirements.txt
-└── LICENSE
-```
-
----
-
-## 📈 Future Improvements
-
-* Add more customer-related features
-* Compare K-Means and Agglomerative Clustering
-* Deploy as a web application
-* Integrate real-time customer analytics
-
----
-
-## ✅ Conclusion
-
-This project successfully demonstrates how machine learning techniques like **Agglomerative Clustering** can be used to segment Amazon users based on behavioral patterns. The generated insights can help businesses improve customer engagement, recommendation systems, and strategic decision-making in e-commerce platforms.
